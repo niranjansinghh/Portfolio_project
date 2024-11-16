@@ -114,6 +114,15 @@ string.addEventListener("mouseleave", function () {
     })
 })
 
+// middle-page gsap
+gsap.from(".project-item", {
+    duration: 2,
+    opacity: 0,
+    y: 50,
+    stagger: 1.5,
+    ease: "power2.out"
+});
+
 
 
 // last-page query
