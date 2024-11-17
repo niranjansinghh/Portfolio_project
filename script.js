@@ -1,5 +1,17 @@
 //first page gsap
 // navbar-content
+document.addEventListener("DOMContentLoaded", function () {
+    const dateElement = document.querySelector("#nav h6");
+    const currentDate = new Date();
+    const formattedDate = currentDate.toLocaleDateString("en-US", {
+        weekday: "long",
+        year: "numeric",
+        month: "long",
+        day: "numeric",
+    });
+    dateElement.textContent = formattedDate;
+});
+
 var menu = document.querySelector("#nav i");
 var cross = document.querySelector("#full i");
 var tl = gsap.timeline();
